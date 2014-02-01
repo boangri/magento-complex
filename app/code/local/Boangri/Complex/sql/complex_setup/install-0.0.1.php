@@ -11,4 +11,13 @@
  */
 
 $installer = $this;
-throw new Exception("This is an exception to stop the installer from completing");
+$installer->startSetup();
+$installer->addEntityType('complex_eavblogpost', array(
+    //entity_model is the URI you'd pass into a Mage::getModel() call
+    'entity_model'    => 'complex/eavblogpost',
+
+    //table refers to the resource URI complex/eavblogpost
+    //<complex_resource>...<eavblogpost><table>eavblog_posts</table>
+    'table'           =>'complex/eavblogpost',
+));
+$installer->endSetup();
