@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Config file 
+ *
+ * @category Boangri
+ * @package Boangri_Complex
+ * @copyright Copyright (c) 2014 Cyberhull LLC (www.cyberhull.com)
+ * @author Boris Gribovskiy (boris.gribovskiy@cyberhull.com)
+ */
+ -->
+ <config>
+    <modules>
+        <Boangri_Complex>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Boangri_Complex>
+    </modules>
+</config> 

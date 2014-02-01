@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Boangri Complex module
+ *
+ * Config file 
+ *
+ * @category Boangri
+ * @package Boangri_Complex
+ * @copyright Copyright (c) 2014 Cyberhull LLC (www.cyberhull.com)
+ * @author Boris Gribovskiy (boris.gribovskiy@cyberhull.com)
+ */
+ -->
+ <config> 
+      
+    <modules>
+        <Boangri_Complex>
+            <version>0.0.1</version>
+        </Boangri_Complex>
+    </modules>
+    
+    <global>
+        <models>
+            <complex>
+                <class>Boangri_Complex_Model</class>
+                <resourceModel>complex_resource</resourceModel>
+            </complex>
+            <complex_resource>
+                <class>Boangri_Complex_Model_Resource</class>
+                <entities>
+                    <eavblogpost>
+                        <table>eavblog_posts</table>
+                    </eavblogpost>
+                </entities>
+            </complex_resource>
+        </models>
+        
+        <resources>
+            <complex_setup>
+                <setup>
+                    <module>Boangri_Complex</module>
+                    <class>Boangri_Complex_Model_Resource_Setup</class>
+                </setup>
+            </complex_setup>
+        </resources>
+        <!--
+        <helpers>
+            <complex>
+                <class>Boangri_Complex_Helper</class>
+            </complex>
+        </helpers>
+        <blocks>
+            <complex>
+                <class>Boangri_Complex_Block</class>
+            </complex>
+        </blocks>
+        -->
+    </global>
+    
+    <frontend>
+        <routers>
+            <complex>
+                <use>standard</use>
+                <args>
+                    <module>Boangri_Complex</module>
+                    <frontName>complex</frontName>
+                </args>
+            </complex>
+        </routers>  
+    </frontend>
+    
+</config> 
