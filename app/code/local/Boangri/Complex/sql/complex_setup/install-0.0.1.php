@@ -24,7 +24,7 @@ $installer->addEntityType('complex/eavblogpost', array(
     'table'           =>'complex/eavblogpost',
 ));
 echo "installer 1 <br>";
-
+/*
 //createEntityTables will automatically setup the tables we need, 
 //        as well as add some configuration rows to the system.
 $installer->createEntityTables(
@@ -57,5 +57,5 @@ $this->addAttribute('complex_eavblogpost', 'title', array(
         'required'          => false,
     ));
 echo "installer end <br>";
- 
+*/ 
 $installer->endSetup(); 
